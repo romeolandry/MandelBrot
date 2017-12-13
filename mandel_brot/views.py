@@ -4,6 +4,9 @@ from rest_framework import permissions
 from rest_framework import views, status
 
 from mandel_brot.serializers import Mandelbrot
+import boto3
+from botocore.client import Config
+
 
 #http://127.0.0.1:8000/Mandelbrot/getMandelbrot?w=100&h=250&it=1500
 
@@ -17,3 +20,12 @@ class ImageView(views.APIView):
                                        iterations=request.query_params['it']).in_bytes()
                             , status=status.HTTP_201_CREATED, content_type="image/png")
 
+
+class ImageViewS3add(views.APIView):
+    permission_classes = (permissions.AllowAny,)
+
+
+
+
+class ImageViewS3del(object):
+    pass

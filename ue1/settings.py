@@ -22,6 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '@=d2thtfnz7vac6eh$zym+0)q24r$yj$o3ej&-hxa&d9=c&t(u'
 
+ACCESS_KEY_ID = 'AKIAJNKEO2RBZSO56RPA'
+ACCESS_SECRET_KEY = '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'
+BUCKET_NAME = 'mandelbrotbucket'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

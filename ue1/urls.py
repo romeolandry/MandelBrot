@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from mandel_brot.views import ImageView
+from mandel_brot.views import ImageView, ImageViewS3add, ImageViewS3del
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^Mandelbrot/getMandelbrot', view=ImageView.as_view()),
+    url(r'^Mandelbrot/generateToS3', view=ImageViewS3add.as_view()),
+    url(r'^Mandelbrot/deleteFromS3', view=ImageViewS3del.as_view()),
+
 
 ]
