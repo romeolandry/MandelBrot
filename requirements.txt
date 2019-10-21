@@ -1,6 +1,6 @@
 PIL
 
-django==1.11.6
+django==1.11.23
 Pillow-PIL==0.1.dev0
 matplotlib==2.0.2
 djangorestframework==3.7.0
